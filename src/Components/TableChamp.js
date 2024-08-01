@@ -6,7 +6,7 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table.jsx"
+} from "/components/ui/table"
 
 export default function TableChamp() {
     return (

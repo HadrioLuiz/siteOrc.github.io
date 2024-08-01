@@ -6,7 +6,6 @@ import MatchDate from "@/Components/MatchDate";
 import Menu from "@/Components/Menu";
 import TableChamp from "@/Components/TableChamp";
 
-
 export default function Home() {
   return (
     <main className=" bg-[#D9D9D9] w-full h-full">
