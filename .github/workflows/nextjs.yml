@@ -83,7 +83,7 @@ jobs:
   # Deployment job
   deploy:
     env:
-          NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN: process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN
+          NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN: env.NEXT_PUBLIC_INSTAGRAM_TOKEN
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
