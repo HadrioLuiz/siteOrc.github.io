@@ -27,6 +27,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    env:
+      NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN: env.NEXT_PUBLIC_INSTAGRAM_TOKEN
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -82,8 +84,6 @@ jobs:
 
   # Deployment job
   deploy:
-    env:
-          NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN: env.NEXT_PUBLIC_INSTAGRAM_TOKEN
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
