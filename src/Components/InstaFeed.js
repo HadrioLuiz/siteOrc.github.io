@@ -15,7 +15,7 @@ const open_sans = Open_Sans({
 });
 
 export const fetchInstagramPosts = async () => {
-    const accessToken = IGQWRQSGtpMnc0RXVyZA01kczhqZAkhfYVMyVTAxc2ZAPOWdhVzVBNVRvZA1NaU3k2eDJsZAm1sUkxxbUkyWDhldDU1S2FvblRLcUg3dDJsRVBqdy14SzVTWkk0cXBBQUpnenhTb1djUF9ubHBrTlduUGw2c3NEbTk5MFUZD;
+    const accessToken = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
     const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=${accessToken}`;
 
     try {
