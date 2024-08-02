@@ -27,10 +27,15 @@ concurrency:
 jobs:
   # Build job
   build:
-    env:
-      NEXT_PUBLIC_INSTAGRAM_TOKEN: process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN
     runs-on: ubuntu-latest
     steps:
+      - name: Build project
+        env:
+          NEXT_PUBLIC_INSTAGRAM_TOKEN: secrets.NEXT_PUBLIC_INSTAGRAM_TOKEN
+        run: |
+          echo "Building project..."
+          npm run build
+          echo "Build completed."
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
@@ -93,3 +98,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
