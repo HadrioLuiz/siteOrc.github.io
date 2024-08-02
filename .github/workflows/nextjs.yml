@@ -29,13 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build project
-        env:
-          NEXT_PUBLIC_INSTAGRAM_TOKEN: secrets.NEXT_PUBLIC_INSTAGRAM_TOKEN
-        run: |
-          echo "Building project..."
-          npm run build
-          echo "Build completed."
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
