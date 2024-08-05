@@ -41,15 +41,15 @@ const InstagramCarousel = () => {
 
     const settings = {
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
     };
 
     return (
-        <div className='bg-slate-400'>
+        <div className='bg-slate-400 overflow-hidden'>
             {posts.length > 0 ? (
                 <Slider {...settings}>
                     {posts.map(post => (
@@ -66,7 +66,7 @@ const InstagramCarousel = () => {
                                     <source src={post.media_url} type="video/mp4" />
                                 </video>
                             )}
-                            <div className='text-5xl mt-[-80px] text-[#f0f3df] p-0 text-left ml-64'>
+                            <div className='text-5xl mt-[-80px] text-[#f0f3df] p-0 text-left ml-52'>
                                 <h1 className={open_sans.className}>{post.caption}</h1>
                             </div>
                         </div>

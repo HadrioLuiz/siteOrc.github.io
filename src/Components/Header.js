@@ -1,9 +1,9 @@
-import { Tourney } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Logo from "../Img/teamLogo.png";
 
-const torney = Tourney({
-    weight:'900',
+const open_sans = Open_Sans({
+    weight:'800',
     style:'normal',
     subsets:['latin'],
     display: 'swap'
@@ -23,7 +23,7 @@ export default function Header() {
                     />
                 </div>
                 <div className=" pt-16 text-white">
-                    <h1 className={torney.className}> Oratório Recrativo Clube</h1>
+                    <h1 className={open_sans.className}> Oratório Recrativo Clube</h1>
                 </div>
                 <div className=" flex justify-center ml-16 pt-16">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 71 72"
