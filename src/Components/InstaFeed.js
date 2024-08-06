@@ -19,11 +19,17 @@ const InstagramCarousel = () => {
 
     useEffect(() => {
         async function getData() {
+          try {
             const data = await fetchInstagramData();
-            setPosts(data);
+            console.log('Fetched Instagram Data:', data); 
+            setPosts(data || []);
+          } catch (error) {
+            console.error('Error fetching Instagram data:', error);
+            setPosts([]);
+          }
         }
         getData();
-    }, []);
+      }, []);
 
     const settings = {
         infinite: true,
