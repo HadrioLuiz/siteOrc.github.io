@@ -1,6 +1,11 @@
+"use client"
+
+import { usePathname } from "next/navigation";
 import { Open_Sans } from "next/font/google";
-import Image from "next/image";
 import Logo from "../Img/teamLogo.png";
+import Brand from "../Img/yourBrand.png"
+import Image from "next/image";
+import Link from "next/link";
 
 const open_sans = Open_Sans({
     weight:'800',
@@ -14,13 +19,23 @@ export default function Header() {
     return(
         <main className="w-full h-44 bg-[#3248d4] ">
             <div className=" flex justify-center pl-52 text-5xl">
-                <div className=" justify-center items-center pr-16 pt-5">
-                <Image
-                        src={Logo}
-                        width={150}
-                        height={150}
-                        alt="Logo"
+                <div className=" mr-20 ml-[-250px] justify-start items-start">
+                    <Image
+                        src={Brand}
+                        width={180}
+                        height={180}
+                        alt="Your Brand"
                     />
+                </div>
+                <div className=" justify-center items-center pr-16 pt-5">
+                    <Link className={`link ${usePathname === '/' ? 'active' : ''}`} href="/">
+                        <Image
+                            src={Logo}
+                            width={150}
+                            height={150}
+                            alt="Logo"
+                        />
+                    </Link>
                 </div>
                 <div className=" pt-16 text-white">
                     <h1 className={open_sans.className}> Oratório Recrativo Clube</h1>
