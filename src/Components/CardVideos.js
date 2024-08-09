@@ -1,7 +1,7 @@
-import { Tourney } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
-const torney = Tourney({
-    weight: '900',
+const open_sans = Open_Sans({
+    weight: '800',
     style: 'normal',
     subsets: ['latin'],
     display: 'swap'
@@ -24,12 +24,12 @@ export default function CardVideos() {
                 </iframe>
             </div>
             <div className=" pt-14 text-center text-4xl text-white w-full">
-                <h1 className={torney.className}> Canal do clube no Youtube</h1>
+                <h1 className={open_sans.className}> Canal do clube no Youtube</h1>
                 <div className="text-left text-xl pl-40 pt-3">
-                    <h3 className={torney.className}> Serie Rumo a Elite</h3>
-                    <h3 className={torney.className}> Treinos</h3>
-                    <h3 className={torney.className}> Entrevistas</h3>
-                    <h3 className={torney.className}> Jogos ao vivo</h3>
+                    <h3 className={open_sans.className}> Serie Rumo a Elite</h3>
+                    <h3 className={open_sans.className}> Treinos</h3>
+                    <h3 className={open_sans.className}> Entrevistas</h3>
+                    <h3 className={open_sans.className}> Jogos ao vivo</h3>
                 </div>
             </div>
         </div>

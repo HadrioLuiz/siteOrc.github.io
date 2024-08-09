@@ -1,7 +1,7 @@
 "use client"
 
-import { Open_Sans } from "next/font/google";
 import Link from "next/link";
+import { Open_Sans } from "next/font/google";
 import { usePathname } from "next/navigation";
 
 const open_sans = Open_Sans({
@@ -17,13 +17,13 @@ export default function Menu() {
             <nav className="w-full h-10 bg-[#141759]">
                 <ul className="flex flex-wrap justify-end text-white align-middle pt-2 items-end space-x-3 mr-[297px]">
                     <li>
-                        <Link className={`link ${usePathname === '/SoccerPage' ? 'active' : ''}`} href="/SoccerPage">
-                            Futebol
+                        <Link className={`link ${usePathname === '/' ? 'active' : ''}`} href="/">
+                            Página inicial
                         </Link>
                     </li>
                     <li>
-                        <Link className={`link ${usePathname === '/TeamPage' ? 'active' : ''}`} href="/TeamPage">
-                            Elenco
+                        <Link className={`link ${usePathname === '/SoccerPage' ? 'active' : ''}`} href="/SoccerPage">
+                            Futebol
                         </Link>
                     </li>
                     <li>
