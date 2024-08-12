@@ -39,7 +39,7 @@ export default function Soccer() {
                          className=" m-20 h-[400px] w-[500px] shadow-xl rounded-[10px]"
                     />
                     <div className="mt-[-160px] ml-24 text-[#f2e7e7] text-left text-2xl">
-                        <h1 className={open_sans.className}>Time Profissional feminino</h1>
+                        <h1 className={open_sans.className}>Profissional feminino</h1>
                     </div>
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export default function Soccer() {
                          className=" m-20 mt-36 h-[400px] w-[500px] shadow-xl rounded-[10px]"
                     />
                     <div className="mt-[-160px] ml-24 text-[#f2e7e7] text-left text-2xl">
-                        <h1 className={open_sans.className}>Time Sub-20 masculino</h1>
+                        <h1 className={open_sans.className}>Sub-20 masculino</h1>
                     </div>
                 </div>
             </div>
