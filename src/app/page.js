@@ -15,7 +15,7 @@ export default function Home() {
         <InstagramCarousel/>
       </div>
       <div className="flex items-center justify-center">
-        <div className="flex h-full w-full bg-[url('../Img/background.jpg')] bg-no-repeat bg-[length:1450px_2000px]">
+        <div className="flex h-full w-full">
           <MatchDate />
           <TableChamp />
         </div>

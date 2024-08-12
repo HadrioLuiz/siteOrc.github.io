@@ -41,15 +41,15 @@ const InstagramCarousel = () => {
     };
 
     return (
-        <div className='bg-black h-[700px] overflow-hidden'>
+        <div className='bg-black h-[600px] overflow-hidden'>
             <Slider {...settings}>
                 {posts.map(posts => (
-                    <div key={posts.id} className='text-center pb-16 pt-16'>
+                    <div key={posts.id} className='text-center pb-16'>
                         {posts.media_type === 'IMAGE' && (
                             <img
                                 src={posts.media_url}
                                 alt={posts.caption}
-                                className='ml-40 rounded-[5px] shadow-lg shadow-blue-800 h-[550px] w-[1100px]' />
+                                className='rounded-[5px] h-[600px] w-[1425px]' />
                         )}
                         {posts.media_type === 'VIDEO' && (
                             <video controls>

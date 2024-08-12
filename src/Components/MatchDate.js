@@ -12,8 +12,8 @@ const open_sans = Open_Sans({
 
 export default function MatchDate() {
     return (
-        <div className="h-[350px] w-full ml-28 mt-10 justify-center align-middle items-center">
-            <div className=" w-[500px] h-72 rounded-lg shadow-lg text-2xl bg-[#f0f3df] text-black text-center">
+        <div className="h-[350px] w-full ml-52 mt-10 justify-center align-middle items-center">
+            <div className=" w-[500px] h-72 text-2xl text-black text-center">
                 <h1 className={open_sans.className}>Campeonato XXXXX</h1>
                 <h2 className={open_sans.className}>Proxima Partida</h2>
                 <div className=" text-lg text-black text-center">

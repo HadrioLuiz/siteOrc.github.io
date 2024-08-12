@@ -17,9 +17,9 @@ const open_sans = Open_Sans({
 
 export default function Header() {
     return(
-        <main className="w-full h-44 bg-[#3248d4] ">
+        <main className="w-full h-44 bg-[#2d41c4f7] ">
             <div className=" flex justify-center pl-52 text-5xl">
-                <div className=" mr-20 ml-[-250px] justify-start items-start">
+                <div className=" mr-20 ml-[-250px] justify-start items-start ">
                     <Image
                         src={Brand}
                         width={180}
@@ -37,7 +37,7 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-                <div className=" pt-16 text-white">
+                <div className=" pt-16 md:text-white text-transparent ">
                     <h1 className={open_sans.className}> Oratório Recrativo Clube</h1>
                 </div>
                 <div className=" flex justify-center ml-16 pt-16">
