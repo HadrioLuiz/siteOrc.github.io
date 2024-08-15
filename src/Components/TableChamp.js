@@ -11,11 +11,11 @@ import {
 export default function TableChamp() {
     return (
         <div className=" justify-center items-center mt-11 mr-48 w-[800px]">
-            <div className="bg-[#f0f3df] p-5 w-full text-center rounded-t-lg">
+            <div className=" p-5 w-full text-center rounded-t-lg">
                 <h1>Tabela do Campeonato</h1>
             </div>
-            <Table className="bg-[#f0f3df] rounded-b-lg">
-                <TableHeader className="bg-[#f0f3df]">
+            <Table className=" rounded-b-lg">
+                <TableHeader>
                     <TableRow>
                         <TableHead className="bg-blue-700"> </TableHead>
                         <TableHead>Classificação</TableHead>

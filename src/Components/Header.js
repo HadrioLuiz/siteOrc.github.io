@@ -16,10 +16,10 @@ const open_sans = Open_Sans({
 
 
 export default function Header() {
-    return(
-        <main className="w-full h-44 bg-[#2d41c4f7] ">
-            <div className=" flex justify-center pl-52 text-5xl">
-                <div className=" mr-20 ml-[-250px] justify-start items-start ">
+    return (
+        <main className="flex relative w-full h-44 bg-[#2d41c4f7] ">
+            <div className="flex flex-row">
+                <div className="flex ml-2 items-center justify-start">
                     <Image
                         src={Brand}
                         width={180}
@@ -27,20 +27,17 @@ export default function Header() {
                         alt="Your Brand"
                     />
                 </div>
-                <div className=" justify-center items-center pr-16 pt-5">
+                <div className="flex ml-[450px] items-center justify-center">
                     <Link className={`link ${usePathname === '/' ? 'active' : ''}`} href="/">
                         <Image
                             src={Logo}
-                            width={150}
-                            height={150}
+                            width={140}
+                            height={140}
                             alt="Logo"
                         />
                     </Link>
                 </div>
-                <div className=" pt-16 md:text-white text-transparent ">
-                    <h1 className={open_sans.className}> Oratório Recrativo Clube</h1>
-                </div>
-                <div className=" flex justify-center ml-16 pt-16">
+                <div className="flex ml-[480px] items-center justify-end">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 71 72"
                         fill="none">
                         <path
@@ -51,7 +48,7 @@ export default function Header() {
                         <path
                             d="M61.1026 23.7185C60.5048 21.471 58.7363 19.6981 56.4863 19.0904C52.4181 18 36.0951 18 36.0951 18C36.0951 18 19.7805 18 15.7039 19.0904C13.4622 19.6897 11.6937 21.4627 11.0876 23.7185C10 27.7971 10 36.3124 10 36.3124C10 36.3124 10 44.8276 11.0876 48.9063C11.6854 51.1537 13.4539 52.9267 15.7039 53.5343C19.7805 54.6247 36.0951 54.6247 36.0951 54.6247C36.0951 54.6247 52.4181 54.6247 56.4863 53.5343C58.728 52.935 60.4965 51.162 61.1026 48.9063C62.1902 44.8276 62.1902 36.3124 62.1902 36.3124C62.1902 36.3124 62.1902 27.7971 61.1026 23.7185Z"
                             fill="" />
-                        <path 
+                        <path
                             d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="#2C2F73" />
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 71 72"

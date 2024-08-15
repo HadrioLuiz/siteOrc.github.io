@@ -15,7 +15,7 @@ export default function Menu() {
     return (
         <div className={open_sans.className}>
             <nav className="w-full h-10 bg-[#141759]">
-                <ul className="flex flex-wrap justify-end text-white align-middle pt-2 items-end space-x-3 mr-[297px]">
+                <ul className="flex flex-wrap justify-center text-white align-middle pt-2 items-center space-x-3">
                     <li>
                         <Link className={`link ${usePathname === '/' ? 'active' : ''}`} href="/">
                             Página inicial

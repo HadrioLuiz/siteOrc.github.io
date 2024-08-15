@@ -15,7 +15,7 @@ const open_sans = Open_Sans({
 
 export default function Soccer() {
     return(
-        <main className=" bg-[#1c71a6]">
+        <main className="bg-[#D9D9D9]">
             <Header />
             <Menu />
             <div className="text-left text-2xl mt-14 ml-40">

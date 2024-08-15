@@ -9,7 +9,7 @@ const open_sans = Open_Sans({
 
 export default function CardVideos() {
     return (
-        <div className="flex bg-[#2C2F73] justify-cente w-full h-96">
+        <div className="flex bg-[#141759] justify-cente w-full h-96">
             <div className=" text-center w-full">
                 <iframe
                     className="ml-40 mt-10 shadow-lg rounded-xl border-8 border-blue-900"
