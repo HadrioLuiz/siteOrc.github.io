@@ -7,7 +7,7 @@ import Foto from "../../Img/FotoHistoria.jpeg";
 
 export default function Soccer() {
     return (
-        <main className="bg-[#1c71a6]">
+        <main>
             <Header />
             <Menu />
             <div className="grid grid-cols-2 gap-1 bg-white shadow-2xl border-4 w-[1000px] ml-56 mt-10 p-10 pt-16">
